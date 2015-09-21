@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app="myTube">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTube: Custom Youtube Viewer</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/services.js"></script>
+    <script src="./assets/js/controllers.js"></script>
+  </head>
+  <body>
+    <div class="grid-frame vertical">
+      <div class="grid-content shrink" style="padding: 0;">
+        <ul class="primary condense menu-bar">
+          <li><a ui-sref="home"><strong>myTube</strong></a></li>
+        </ul>
+      </div>
+      <div ui-view class="grid-content">
+      </div>
+    </div>
+  </body>
+</html>

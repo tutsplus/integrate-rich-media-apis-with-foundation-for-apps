@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="soundbrowse">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundBrowse</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/services.js"></script>
+    <script src="./assets/js/directives.js"></script>
+    <script src="./assets/js/controllers.js"></script>
+  </head>
+  <body>
+    <div class="grid-frame vertical">
+      <div class="align-justify grid-block">
+        <div ui-view class="medium-8 grid-block">
+        </div>
+        <div class ="medium-4 grid-block">
+          <div class="grid-content" style="padding: 0;">
+            <ul class="icon-left vertical primary menu-bar">
+              <li><a>SoundBrowse</a></li>
+              <li><a ui-sref ="home"><img zf-iconic="" icon="home" size="small" class="iconic-color-primary">Home</a></li>
+              <li><a ui-sref="search"><img zf-iconic="" icon="magnifying-glass" size="small" class="iconic-color-primary">Search</a></li>
+              <li><a ui-sref = "favorites"><img zf-iconic="" icon="star" size="small" class="iconic-color-primary">Favorites</a></li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

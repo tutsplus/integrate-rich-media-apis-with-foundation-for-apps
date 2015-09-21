@@ -1,0 +1,25 @@
+---
+name: search
+url: /search
+controller: searchController
+---
+<div class="grid-block">
+    <div class="small-12 grid-content">
+        <form>
+            <label>
+                Search
+                <span class="inline-label">
+                    <input type="search" placeholder="Search sounds" ng-model="search1">
+                     <a href="#" class="button" ng-click="soundList(search1)" >Search</a>
+                </span>
+            </label>
+        </form>
+    </div>    
+</div>
+<div class="grid-block large-up-3">
+    <div class="grid-block" ng-repeat="sound in sounds">
+        <div class="grid-content" >
+            <sound-embed></sound-embed>
+        </div>    
+    </div>
+</div>    

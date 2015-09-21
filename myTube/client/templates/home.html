@@ -1,0 +1,28 @@
+---
+name: home
+url: /
+controller: homeController
+---
+<div class = "grid-frame" ng-init = "vidList()">
+  <div class = "grid-block large-up-4">
+    <div class="grid-block" ng-repeat="vid in videos">
+      <div class="grid-content">
+        <a ui-sref = "display({id:vid.id})"> 
+        <img class="thumbnail" src="{{vid.thumbnail}}">
+        </a>
+      </div>
+      <div class="grid-content">
+        <dl>
+        <dt>{{vid.title}}</dt>
+        <dd>{{vid.description}}</dd>
+        </dl>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    
+  </div>
+</div>

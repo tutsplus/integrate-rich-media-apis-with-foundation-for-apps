@@ -1,0 +1,15 @@
+---
+name: home
+url: /
+controller: searchController
+---
+
+<div class="grid-block large-up-4">
+  <div class="grid-block" ng-repeat="pic in pix">
+    <div class="grid-content" >
+      <div class="card">
+          <img src="{{pic.images.thumbnail.url}}">
+      </div>
+    </div>
+  </div>
+</div>
